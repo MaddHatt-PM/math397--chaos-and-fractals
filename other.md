@@ -1,0 +1,1 @@
+For this week I watched FreeCodeCamps' video on tree algorithm
