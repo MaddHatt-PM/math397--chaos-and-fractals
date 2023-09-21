@@ -1,9 +1,9 @@
-# September 6, 2023 - Parameterized Family of Functions (Cont)
+# September 6, 2023 - Parameterized Family of Functions (Continued)
 On Tuesday, we will be working on practice problems.
 
 Short pseudo quiz for defining *fixed points* and *attractive fixed points*.  
-Def: Fixed Point: Let $x_0 \in \R$. If $f(x_0) = x_0$, then $x_0$ is a fixed point.  
-Def: Attractive Fixed Point: 
+___Def: Fixed Point___: Let $x_0 \in \R$. If $f(x_0) = x_0$, then $x_0$ is a fixed point.  
+___Def: Attractive Fixed Point___: Let $x_0 \in \R$ such that $f(x_0) = x_0$. If $0 < |f'(x_0)| < 1$, then $x_0$ is an attractive fixed point.
 
 ---
 
@@ -37,12 +37,12 @@ c &\ge -\frac{3}{4}\\
 &\space\blacksquare
 \end{aligned}
 $$
-
+***
 ### Conjugacy
 ___Def: Conjugacy:___  
 Let $S$ and $T$ be sets.  
 Suppose $f:S \to S$ and $g:T \to T$.  
-We say that $f$ is semi-conjugate to $g$ if there is a subjective function $\varphi $ such that $ f \circ\varphi = \varphi \circ g$.  
+We say that $f$ is semi-conjugate to $g$ if there is a subjective function $\varphi$ such that $f \circ\varphi = \varphi \circ g$.  
 In the case that $\phi$ is a bijection, we say that $f$ and $g$ are conjugate.
 
 Note: that $f^2 \circ \varphi = f \circ f \circ \varphi = f \circ \varphi \circ g = \varphi \circ g \circ g = \varphi \circ g^2$,  
@@ -54,7 +54,7 @@ Recall: Bijective means that a function is one-to-one and onto.
 Claim: $f(x) = x^2 - 2$ is conjugate to $g(x) = 2x^2 +2x + 1$ under $\varphi(x) = 2x+1$.  
 Note: $f \circ \varphi = \varphi \circ \varphi$ so $\varphi^{-1} \circ f = g \circ \varphi^{-1}$.  
 Show $f \circ \varphi = \varphi \circ g$.  
-So
+So,
 $$
 \begin{aligned}
 f(\varphi(x)) &= (2x+1)^2 -2\\
@@ -90,7 +90,7 @@ By induction (skipped proof), we can say that $f^n = \varphi \circ g^n \circ \va
 
 Finding the conjugate between two functions can be difficult to obtain.  
 Let $f(x) = x^2 - 2$ and $g(x) = 4x(1-x)$.  
-Find $\varphi(x)$.  
+Find $\varphi(x)$ where $\varphi(x)$ is of the form $ax+b$ for some $a,b$.  
 
 $$
 \begin{aligned}
@@ -111,7 +111,7 @@ a^2 &=-4a \to a^2+4a = 0 \to a(a-4) = 0 \to a=0 \text{ or } \boxed{a=-4}.\\
 b^2 - 2 &= b \to (2)^2 - 2 = (2) \to 4-2 = 2 \to 2 = 2. \text{ which proves that } b=2.
 \end{aligned}
 $$
-
+Therefore we can say that $\varphi(x) = -4x +2$.
 
 ---
 
